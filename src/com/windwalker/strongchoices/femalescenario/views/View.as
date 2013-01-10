@@ -1,8 +1,8 @@
-package com.windwalker.strongchoices.views 
+package com.windwalker.strongchoices.femalescenario.views 
 {
 	import qhn.mvc.view.CompositeView;
 
-	import com.windwalker.strongchoices.Model;
+	import com.windwalker.strongchoices.femalescenario.Model;
 
 	import flash.display.MovieClip;
 	import flash.events.Event;
@@ -24,8 +24,7 @@ package com.windwalker.strongchoices.views
 			switch((model as Model).state)
 			{
 				case "LOAD_COMPLETE":
-					trace("dfd");
-					addChild((model as Model).getContent('appContent'));	
+					addChild((model as Model).currentContent);	
 					break;
 				default:
 			}

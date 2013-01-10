@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<scene  id="U1L1">
+	<title>Beerburg Sex Assault</title>
+	<nodes>
+		<node id="1" type="">
+			<title>Splash</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="2" type="">
+			<title>Start</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="3" type="">
+			<title>Weekend Off</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="4" type="">
+			<title>Not a Vacation</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="5" type="">
+			<title>To Blitz or not to Blitz?</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="6" type="">
+			<title>Hit the Club</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="7" type="">
+			<title>A Quiet Bar</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="8" type="">
+			<title>Hang Low Tonight</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="9" type="">
+			<title>A Quiet Bar (cont'd)</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="10" type="">
+			<title>From Bar to Club</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="11" type="">
+			<title>From Bar to Club (cont'd)</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="12" type="">
+			<title>Ladies Man</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="13" type="">
+			<title>Grilling Steaks</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="14" type="">
+			<title>Throw the Football</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="15" type="">
+			<title>Eigh Percent Beer</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="16" type="">
+			<title>Hung Over</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="17" type="">
+			<title>More Shots</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="18" type="">
+			<title>Maybe We Should Call It A Night</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="19" type="">
+			<title>The Shit Riley Pulls</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="20" type="">
+			<title>With Riley Checked</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="21" type="">
+			<title>High Success</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="22" type="">
+			<title>No Success</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="23" type="">
+			<title>Low Success</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="24" type="">
+			<title>Outside of Club</title>
+			<file src="assets/media/FemaleScenario_0001.jpg" />
+		</node>
+		<node id="25" type="">
+			<title>Busted</title>
+			<file src="assets/media/busted.swf" />
+		</node>
+	</nodes>	
+</scene>

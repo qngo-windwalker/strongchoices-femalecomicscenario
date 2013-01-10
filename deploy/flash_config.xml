@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<config>
+	<base_swf_path value="" />
+	<preloader_src value="preloader.swf" />
+	<app_src value="strong_choices.swf" />
+</config>
