@@ -1,0 +1,5 @@
+# Ignore IDE setting files.
+
+.settings
+.project
+.buildpath
