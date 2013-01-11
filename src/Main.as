@@ -36,11 +36,11 @@
 			
 			var configFile : String = stage.loaderInfo.parameters.configSrc || "";
 			
+			trace("main.fla :: init()");
+			
 			model = Model.getInstance();
 			model.addEventListener(Event.COMPLETE, onModelComplete);
 			model.load(new URLRequest(configFile + "flash_config.xml"));
-			
-			trace("main.fla :: init()");
 		}
 
 		private function onModelComplete(event : Event) : void 

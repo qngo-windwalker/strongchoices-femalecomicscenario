@@ -1,5 +1,6 @@
 package com.windwalker.strongchoices.views 
 {
+	import com.windwalker.display.ProMovieClip;
 	import qhn.mvc.view.CompositeView;
 
 	import com.windwalker.strongchoices.Model;
@@ -12,7 +13,7 @@ package com.windwalker.strongchoices.views
 	 */
 	public class View extends CompositeView 
 	{
-		private var mc : MovieClip;
+		private var mc : ProMovieClip;
 
 		public function View(aModel : Object, aController : Object = null)
 		{
@@ -24,8 +25,9 @@ package com.windwalker.strongchoices.views
 			switch((model as Model).state)
 			{
 				case "LOAD_COMPLETE":
-					trace("dfd");
-					addChild((model as Model).getContent('appContent'));	
+					mc = ProMovieClip((model as Model).getContent('app_src'));
+					mc.requiredDataSrc = (model as Model).flash_configXML.app_src.@requires;
+					addChild(mc);	
 					break;
 				default:
 			}

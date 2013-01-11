@@ -9,28 +9,26 @@ package com.windwalker.strongchoices.femalescenario
 		private var xml : XML;
 		private var nodeList : XMLList;
 		
+		var node:Namespace = new Namespace("node", "http://www.test.com/weather/");
+//		
+//		var soapNS:Namespace = xml.namespace("node");
+//		
 		public function XMLHelper($xml : XML)
 		{
 			xml = $xml;
+			xml.addNamespace(node);
 			nodeList = xml.nodes.node;
 		}
 
-		public function getSrcByNodeID($ID : int) : String 
+		public function getFirstNodeID() : String 
 		{
-			var node : XMLList = xml.nodes.node.(@id == $ID);
-			
-			return node.file.@src;
+			return xml.@first_node;
 		}
 
-		public function getNextId(currentID : int) : int 
+		public function getNodeDataByID(id : String) : XMLList 
 		{
-			var node : XMLList = xml.nodes.node.(@id == currentID);
-			return node.complete.@target;
-		}
-
-		public function getFirstNodeID() : int 
-		{
-			return xml.@begin_id;
+			var node : XMLList = xml.nodes.node.(@id == id);
+			return node;
 		}
 	}
 }

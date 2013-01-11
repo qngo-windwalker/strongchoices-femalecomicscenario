@@ -14,15 +14,16 @@ package com.windwalker.strongchoices.femalescenario
 	public class Model extends EventDispatcher 
 	{
 		public var state : String = "preloading";
-		public var contentCollection : Array = new Array();
-		private static var _instance : Model;
-		private var urlLoader : URLLoader;
-		private var loader : Loader;
-		private var xml : XML;
-		private var xmlHelper : XMLHelper;
-		public var currentNodeID : int = 1;
 		public var currentContent : DisplayObject;
 		public var userHistory : Array = new Array();
+		public var currentNodeData : XMLList;
+		
+		private static var _instance : Model;
+		
+		private var urlLoader : URLLoader;
+		private var loader : Loader;
+		private var xmlHelper : XMLHelper;
+		
 
 		public function Model($pvt : PrivateClass) 
 		{
@@ -39,7 +40,7 @@ package com.windwalker.strongchoices.femalescenario
 			}
 			return _instance;
 		}
-
+		
 		public function load(urlRequest : URLRequest) : void 
 		{
 			urlLoader = new URLLoader();
@@ -78,27 +79,6 @@ package com.windwalker.strongchoices.femalescenario
 //			_targetFrame = Math.floor(framesPerItem * pct) + (framesPerItem * $itemsLoaded);
 		}
 
-		public function gotoNode(node) : void 
-		{
-			if (node is String) 
-			{ 
-				switch(node){
-					case "FIRST":
-						currentNodeID = xmlHelper.getFirstNodeID();
-						break;
-					default:
-				} 
-			} 
-		    else if (node is Number) 
-		    { 
-				currentNodeID = node;
-		    } 
-			// record id 
-			userHistory.push(currentNodeID);
-			
-			loadMedia(xmlHelper.getSrcByNodeID(currentNodeID));
-		}
-
 		private function loadMedia(src : String) : void 
 		{
 			loader = new Loader();
@@ -124,12 +104,45 @@ package com.windwalker.strongchoices.femalescenario
 			
 			dispatchEvent(new Event(Event.CHANGE));
 		}
-
-		public function forward(currentID : int) : void 
+		
+		/*
+		 * param @id : String An id such as "1", "2a", or "3.4b".
+		 */
+		public function updateCurrentNodeById(id : String) : void 
 		{
-			// Get the next node id.
-			var nextId : int = xmlHelper.getNextId(currentID);
-			gotoNode(nextId);
+			// record id 
+			userHistory.push(id);
+			
+			// Get the XML data from the xml source.
+			currentNodeData = xmlHelper.getNodeDataByID(id);
+			
+			var fileSrc : String = currentNodeData.file.@src;
+			loadMedia(fileSrc);
+		}
+
+		/*
+		 * @param node : * Can be a string or number. Number can be in String format
+		 */
+		public function gotoNode(node) : void 
+		{
+			var nodeID : String;
+			// Accept "FIRST" or "1" or "1a". Since XML returns string.
+			if (node is String) 
+			{ 
+				switch(node){
+					case "FIRST":
+						nodeID = xmlHelper.getFirstNodeID();
+						break;
+					default:
+					nodeID = node;
+				} 
+			} 
+		    else if (node is Number) 
+		    { 
+				nodeID = node;
+		    } 
+		    
+			updateCurrentNodeById(String(nodeID));
 		}
 	}
 }

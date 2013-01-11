@@ -1,5 +1,6 @@
-package com.windwalker.strongchoices.femalescenario 
+﻿package com.windwalker.strongchoices.femalescenario 
 {
+	import flash.display.DisplayObject;
 	import flash.events.Event;
 
 	/**
@@ -23,19 +24,22 @@ package com.windwalker.strongchoices.femalescenario
 		{
 			var userHistory : Array = model.userHistory;
 			userHistory.pop(); // Remove current one.
-			var id : int = userHistory.pop(); // Remove previous one and reference it.
-			model.gotoNode(id);  
+			var id : String = userHistory.pop(); // Remove previous one and reference it.
+			model.updateCurrentNodeById(id);  
 		}
 
 		public function onNextClick(event : Event = null) : void 
 		{
-			// NOTE: An unset datatype 'int' is the same as 0
-			// Example 'var i : int = null' is the same as 'var i = 0';
-
-			var currentID : int = model.currentNodeID;
-//			currentID++;
-//			model.gotoNode(currentID);  
-			model.forward(currentID);  
+			var nextNodeID : String;
+			var currentNodeData : XMLList = model.currentNodeData;
+			
+			nextNodeID = currentNodeData.complete.@value;
+			model.gotoNode(nextNodeID);
+		}
+		
+		public function gotoNode(nextNodeID : *) : void 
+		{
+			model.gotoNode(nextNodeID);
 		}
 	}
 }

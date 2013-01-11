@@ -22,7 +22,9 @@ package com.windwalker.strongchoices
 		
 		public var state : String = "preloading";
 		public var contentCollection : Array = new Array();
-
+		
+		public var flash_configXML : XML;
+		
 		public function Model($pvt : PrivateClass) 
 		{
 			super();
@@ -49,6 +51,8 @@ package com.windwalker.strongchoices
 		private function onUrlLoaderComplete(event : Event) : void 
 		{
 			urlLoader.removeEventListener(Event.COMPLETE, onUrlLoaderComplete);
+			
+			flash_configXML = XML(event.target.data);
 
 			globalData = new GlobalData('XML');
 			globalData.xml = XML(event.target.data);
@@ -62,7 +66,7 @@ package com.windwalker.strongchoices
 			
 			switch($state){
 				case "START":
-					loadMedia(globalData.appSrc);
+					loadMedia(globalData.app_src);
 					break;
 				default:
 			}
@@ -90,7 +94,8 @@ package com.windwalker.strongchoices
 			loader.contentLoaderInfo.removeEventListener(Event.COMPLETE, _onLoadComplete);
 			loader.contentLoaderInfo.removeEventListener(ProgressEvent.PROGRESS, _onLoadProgress);
 			
-			contentCollection['appContent'] = $evt.target.content;
+			contentCollection['app_src'] = [];
+			contentCollection['app_src']['DisplayObject'] = $evt.target.content;
 			
 			state = "LOAD_COMPLETE";
 			
@@ -99,7 +104,7 @@ package com.windwalker.strongchoices
 		
 		public function getContent( id : String) : DisplayObject
 		{
-			return contentCollection[id];
+			return contentCollection[id]['DisplayObject'];
 		}
 		
 		private function updateProgress($bytesLoaded:Number, $bytesTotal:Number, $itemsLoaded:Number, $itemsTotal:Number):void{

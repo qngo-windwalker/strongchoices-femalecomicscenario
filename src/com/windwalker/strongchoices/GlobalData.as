@@ -9,7 +9,7 @@ package com.windwalker.strongchoices
 		public var dataType : String;
 		
 		private var _xml : XML;
-		public var appSrc : String;
+		public var app_src : String;
 		public var contentCollection : Array = new Array();
 
 		public function GlobalData($dataType : String)
@@ -20,7 +20,7 @@ package com.windwalker.strongchoices
 		public function set xml ($xml : XML)
 		{
 			_xml = $xml;
-			appSrc = _xml.app_src.@value;
+			app_src = _xml.app_src.@value;
 		}
 
 		public function setContent(string : String, content : *) : void 

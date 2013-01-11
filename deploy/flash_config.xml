@@ -2,5 +2,5 @@
 <config>
 	<base_swf_path value="" />
 	<preloader_src value="preloader.swf" />
-	<app_src value="female_scenario.swf" />
+	<app_src value="female_scenario.swf" requires="female_scenario.xml" />
 </config>
