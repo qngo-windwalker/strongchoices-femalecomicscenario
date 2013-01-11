@@ -16,12 +16,15 @@ package com.windwalker.strongchoices.femalescenario
 
 		public function init() : void 
 		{
-			model.update("START");
+			model.gotoNode("FIRST");  
 		}
 
 		public function onPreClick(event : Event = null) : void 
 		{
-			trace("prev");
+			var userHistory : Array = model.userHistory;
+			userHistory.pop(); // Remove current one.
+			var id : int = userHistory.pop(); // Remove previous one and reference it.
+			model.gotoNode(id);  
 		}
 
 		public function onNextClick(event : Event = null) : void 
@@ -29,9 +32,10 @@ package com.windwalker.strongchoices.femalescenario
 			// NOTE: An unset datatype 'int' is the same as 0
 			// Example 'var i : int = null' is the same as 'var i = 0';
 
-			var currentID = model.currentNodeID;
-			currentID++;
-			model.gotoNode(currentID);  
+			var currentID : int = model.currentNodeID;
+//			currentID++;
+//			model.gotoNode(currentID);  
+			model.forward(currentID);  
 		}
 	}
 }

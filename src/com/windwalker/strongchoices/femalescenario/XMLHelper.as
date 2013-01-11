@@ -21,5 +21,16 @@ package com.windwalker.strongchoices.femalescenario
 			
 			return node.file.@src;
 		}
+
+		public function getNextId(currentID : int) : int 
+		{
+			var node : XMLList = xml.nodes.node.(@id == currentID);
+			return node.complete.@target;
+		}
+
+		public function getFirstNodeID() : int 
+		{
+			return xml.@begin_id;
+		}
 	}
 }

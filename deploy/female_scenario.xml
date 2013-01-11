@@ -1,106 +1,211 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<scene  id="U1L1">
+<scene  id="U1L1" begin_id="1" >
 	<title>Beerburg Sex Assault</title>
 	<nodes>
 		<node id="1" type="">
 			<title>Splash</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0001.png" />
+			<complete action="gotoAndPlay" target="2"/>
 		</node>
 		<node id="2" type="">
 			<title>Start</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0002.png" />
+			<complete action="gotoAndPlay" target="3"/>
 		</node>
 		<node id="3" type="">
 			<title>Weekend Off</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0003.png" />
+			<complete action="gotoAndPlay" target="4"/>
 		</node>
 		<node id="4" type="">
 			<title>Not a Vacation</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0004.png" />
+			<complete action="gotoAndPlay" target="5"/>
 		</node>
 		<node id="5" type="">
 			<title>To Blitz or not to Blitz?</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0005.png" />
+			<complete action="gotoAndPlay" target="6"/>
 		</node>
 		<node id="6" type="">
 			<title>Hit the Club</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0006.png" />
+			<complete action="gotoAndPlay" target="7"/>
 		</node>
 		<node id="7" type="">
 			<title>A Quiet Bar</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0007.png" />
+			<complete action="gotoAndPlay" target="8"/>
 		</node>
 		<node id="8" type="">
 			<title>Hang Low Tonight</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0008.png" />
+			<complete action="gotoAndPlay" target="9"/>
 		</node>
 		<node id="9" type="">
 			<title>A Quiet Bar (cont'd)</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0009.png" />
+			<complete action="gotoAndPlay" target="10"/>
 		</node>
 		<node id="10" type="">
 			<title>From Bar to Club</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0010.png" />
+			<complete action="gotoAndPlay" target="11"/>
 		</node>
 		<node id="11" type="">
 			<title>From Bar to Club (cont'd)</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0011.png" />
+			<complete action="gotoAndPlay" target="12"/>
 		</node>
 		<node id="12" type="">
 			<title>Ladies Man</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0012.png" />
+			<complete action="gotoAndPlay" target="13"/>
 		</node>
 		<node id="13" type="">
 			<title>Grilling Steaks</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0013.png" />
+			<complete action="gotoAndPlay" target="14"/>
 		</node>
 		<node id="14" type="">
 			<title>Throw the Football</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0014.png" />
+			<complete action="gotoAndPlay" target="15"/>
 		</node>
 		<node id="15" type="">
 			<title>Eigh Percent Beer</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0015.png" />
+			<complete action="gotoAndPlay" target="16"/>
 		</node>
 		<node id="16" type="">
 			<title>Hung Over</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0016.png" />
+			<complete action="gotoAndPlay" target="17"/>
 		</node>
 		<node id="17" type="">
 			<title>More Shots</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0017.png" />
+			<complete action="gotoAndPlay" target="18"/>
 		</node>
 		<node id="18" type="">
 			<title>Maybe We Should Call It A Night</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0018.png" />
+			<complete action="gotoAndPlay" target="19"/>
 		</node>
 		<node id="19" type="">
 			<title>The Shit Riley Pulls</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0019.png" />
+			<complete action="gotoAndPlay" target="20"/>
 		</node>
 		<node id="20" type="">
 			<title>With Riley Checked</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0020.png" />
+			<complete action="gotoAndPlay" target="21"/>
 		</node>
 		<node id="21" type="">
 			<title>High Success</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0021.png" />
+			<complete action="gotoAndPlay" target="22"/>
 		</node>
 		<node id="22" type="">
 			<title>No Success</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0022.png" />
+			<complete action="gotoAndPlay" target="23"/>
 		</node>
 		<node id="23" type="">
 			<title>Low Success</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0023.png" />
+			<complete action="gotoAndPlay" target="24"/>
 		</node>
 		<node id="24" type="">
 			<title>Outside of Club</title>
-			<file src="assets/media/FemaleScenario_0001.jpg" />
+			<file src="assets/media/FemaleComicScenario_0024.png" />
+			<complete action="gotoAndPlay" target="25"/>
 		</node>
 		<node id="25" type="">
 			<title>Busted</title>
-			<file src="assets/media/busted.swf" />
+			<file src="assets/media/FemaleComicScenario_0025.png" />
+			<complete action="gotoAndPlay" target="26"/>
+		</node>
+		<node id="26" type="">
+			<title>Busted</title>
+			<file src="assets/media/FemaleComicScenario_0026.png" />
+			<complete action="gotoAndPlay" target="27"/>
+		</node>
+		<node id="27" type="">
+			<title>Busted</title>
+			<file src="assets/media/FemaleComicScenario_0027.png" />
+			<complete action="gotoAndPlay" target="28"/>
+		</node>
+		<node id="28" type="">
+			<title>Busted</title>
+			<file src="assets/media/FemaleComicScenario_0028.png" />
+			<complete action="gotoAndPlay" target="29"/>
+		</node>
+		<node id="29" type="">
+			<title>Busted</title>
+			<file src="assets/media/FemaleComicScenario_0029.png" />
+			<complete action="gotoAndPlay" target="30"/>
+		</node>
+		<node id="30" type="">
+			<title>Busted</title>
+			<file src="assets/media/FemaleComicScenario_0030.png" />
+			<complete action="gotoAndPlay" target="31"/>
+		</node>
+		<node id="31" type="">
+			<title>Busted</title>
+			<file src="assets/media/FemaleComicScenario_0031.png" />
+			<complete action="gotoAndPlay" target="32"/>
+		</node>
+		<node id="32" type="">
+			<title>Busted</title>
+			<file src="assets/media/FemaleComicScenario_0032.png" />
+			<complete action="gotoAndPlay" target="33"/>
+		</node>
+		<node id="33" type="">
+			<title>Busted</title>
+			<file src="assets/media/FemaleComicScenario_0033.png" />
+			<complete action="gotoAndPlay" target="34"/>
+		</node>
+		<node id="34" type="">
+			<title>Busted</title>
+			<file src="assets/media/FemaleComicScenario_0034.png" />
+			<complete action="gotoAndPlay" target="35"/>
+		</node>
+		<node id="35" type="">
+			<title>Busted</title>
+			<file src="assets/media/FemaleComicScenario_0035.png" />
+			<complete action="gotoAndPlay" target="36"/>
+		</node>
+		<node id="36" type="">
+			<title>Busted</title>
+			<file src="assets/media/FemaleComicScenario_0036.png" />
+			<complete action="gotoAndPlay" target="37"/>
+		</node>
+		<node id="37" type="">
+			<title>Busted</title>
+			<file src="assets/media/FemaleComicScenario_0037.png" />
+			<complete action="gotoAndPlay" target="38"/>
+		</node>
+		<node id="38" type="">
+			<title>Busted</title>
+			<file src="assets/media/FemaleComicScenario_0038.png" />
+			<complete action="gotoAndPlay" target="39"/>
+		</node>
+		<node id="39" type="">
+			<title>Busted</title>
+			<file src="assets/media/FemaleComicScenario_0039.png" />
+			<complete action="gotoAndPlay" target="40"/>
+		</node>
+		<node id="40" type="">
+			<title>Busted</title>
+			<file src="assets/media/FemaleComicScenario_0040.png" />
+			<complete action="gotoAndPlay" target="41"/>
+		</node>
+		<node id="41" type="">
+			<title>Busted</title>
+			<file src="assets/media/FemaleComicScenario_0041.png" />
+			<complete action="end"/>
 		</node>
 	</nodes>	
 </scene>

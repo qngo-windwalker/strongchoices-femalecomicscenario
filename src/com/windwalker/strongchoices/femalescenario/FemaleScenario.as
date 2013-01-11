@@ -17,6 +17,10 @@ package com.windwalker.strongchoices.femalescenario
 		private var view : View;
 		private var controller : Controller;
 		
+		private var prevMC : MovieClip;
+		private var nextMC : MovieClip;
+		
+		
 		public function FemaleScenario()
 		{
 			super();
@@ -46,21 +50,45 @@ package com.windwalker.strongchoices.femalescenario
 			// Adding interaction to the UI.
 			var navMC : MovieClip = MovieClip(getChildByName("nav_mc"));
 			
-			var preMC : MovieClip = MovieClip(navMC.getChildByName("prev_mc"));
-			preMC.addEventListener(MouseEvent.CLICK, controller.onPreClick);
-			preMC.buttonMode = true;
+			prevMC = MovieClip(navMC.getChildByName("prev_mc"));
+			prevMC.addEventListener(MouseEvent.CLICK, controller.onPreClick);
+			prevMC.buttonMode = true;
+			prevMC.mouseEnabled = false;
 			
-			var nextMC : MovieClip = MovieClip(navMC.getChildByName("next_mc"));
+			nextMC = MovieClip(navMC.getChildByName("next_mc"));
 			nextMC.addEventListener(MouseEvent.CLICK, controller.onNextClick);
 			nextMC.buttonMode = true;
 			
 			var containerMC : MovieClip = MovieClip(getChildByName("container_mc"));
 			containerMC.addChild(view);
+			
+			disableBtn(prevMC);
+			controller.init();
 		}
 
 		private function onModelChange(event : Event) : void 
 		{
+			var userHistory : Array = model.userHistory;
+			
+			// If first frame
+			if (userHistory.length == 1)
+				disableBtn(prevMC);
+			else 			
+				enableBtn(prevMC);
+				
 			view.update(event);
+		}
+
+		private function enableBtn(btn : MovieClip) : void 
+		{
+			btn.mouseEnabled = true;
+			btn.alpha = 1;
+		}
+
+		private function disableBtn(btn : MovieClip) : void 
+		{
+			btn.mouseEnabled = false;
+			btn.alpha = .25;
 		}
 	}
 }
