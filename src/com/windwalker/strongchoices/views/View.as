@@ -27,6 +27,7 @@ package com.windwalker.strongchoices.views
 				case "LOAD_COMPLETE":
 					mc = ProMovieClip((model as Model).getContent('app_src'));
 					mc.requiredDataSrc = (model as Model).flash_configXML.app_src.@requires;
+					trace('mc.requiredDataSrc: ' + (mc.requiredDataSrc));
 					addChild(mc);	
 					break;
 				default:
