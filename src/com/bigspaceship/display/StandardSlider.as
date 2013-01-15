@@ -217,17 +217,17 @@ package com.bigspaceship.display
 		//  GETTER/SETTERS
 		//--------------------------------------
 		
-		public function get visible():Boolean { return _dragger.mc.visible; };
+		public function get visible():Boolean { return _dragger.mc.visible; }
 		public function set visible($isVisible:Boolean):void { _dragger.mc.visible = $isVisible; };
-		public function get isDragging():Boolean { return _isDragging; };
-		public function set scrollAmount($value:int):void { _dist = $value; };
+		public function get isDragging():Boolean { return _isDragging; }
+		public function set scrollAmount($value:int):void { _dist = $value; }
 		/**
 		*  The <code>offset()</code> method sets the offset, if any,
 		*	for the gutter left/right or top/bottom
 		*
 		*	@param offset Specifies the offset
 		*/
-		public function set offset($value:int):void { _offset = $value; };
-	};
-};
+		public function set offset($value:int):void { _offset = $value; }
+	}
+}
 

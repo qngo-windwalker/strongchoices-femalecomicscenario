@@ -64,10 +64,10 @@ package com.bigspaceship.events
 		public function NavigationEvent($type:String, $info:Object = null, $bubbles:Boolean = false, $cancelable:Boolean = false){
 			super($type, $bubbles, $cancelable);
 			_info = $info;
-		};
+		}
 		
 		public override function clone():Event{
 			return new NavigationEvent(type, info, bubbles, cancelable);
-		};
-	};
-};
+		}
+	}
+}

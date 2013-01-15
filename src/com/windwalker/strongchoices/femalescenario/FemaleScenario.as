@@ -4,6 +4,8 @@ package com.windwalker.strongchoices.femalescenario
 	import com.windwalker.strongchoices.femalescenario.views.View;
 
 	import flash.display.MovieClip;
+	import flash.display.StageAlign;
+	import flash.display.StageScaleMode;
 	import flash.events.Event;
 	import flash.events.MouseEvent;
 	import flash.net.URLRequest;
@@ -18,6 +20,7 @@ package com.windwalker.strongchoices.femalescenario
 		private var view : View;
 		private var controller : Controller;
 
+		private var navMC : MovieClip;
 		private var prevMC : MovieClip;
 		private var nextMC : MovieClip;
 		private var titleTF : TextField;
@@ -39,6 +42,9 @@ package com.windwalker.strongchoices.femalescenario
 		{
 			trace("Female Scenario init()");
 			
+			stage.scaleMode = StageScaleMode.NO_SCALE;
+			stage.align     = StageAlign.TOP_LEFT;
+			
 			model = Model.getInstance();
 			model.addEventListener(Event.COMPLETE, onModelComplete);
 			model.load(new URLRequest(requiredDataSrc));
@@ -55,7 +61,7 @@ package com.windwalker.strongchoices.femalescenario
 			view = new View(model, controller);
 			
 			// Adding interaction to the UI.
-			var navMC : MovieClip = MovieClip(getChildByName("nav_mc"));
+			navMC = MovieClip(getChildByName("nav_mc"));
 			
 			prevMC = MovieClip(navMC.getChildByName("prev_mc"));
 			prevMC.addEventListener(MouseEvent.CLICK, controller.onPreClick);
@@ -71,8 +77,16 @@ package com.windwalker.strongchoices.femalescenario
 			
 			titleTF = TextField(navMC.getChildByName("title_txt"));
 			
+			stage.addEventListener(Event.RESIZE, onStageResize);
+			onStageResize();
+			
 			disableBtn(prevMC);
 			controller.init();
+		}
+
+		private function onStageResize(event : Event = null) : void 
+		{
+			navMC.y = (stage.stageHeight - navMC.height) + 1;
 		}
 
 		private function onModelChange(event : Event) : void 
