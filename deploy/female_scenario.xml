@@ -25,7 +25,7 @@ TODO ::
 		<node id="3" type="eval">
 			<title>Weekend Off</title>
 			<file src="assets/media/scene_03.swf" />
-			<complete action="eval" value="0:4,1:25,2:34"/>
+			<complete action="addEventListener:Event.COMPLETE" value="0:25,1:4,2:34"/>
 		</node>
 		<node id="4" >
 			<title>Not a Vacation</title>
@@ -42,11 +42,13 @@ TODO ::
 			<file src="assets/media/FemaleComicScenario_0006.png" />
 			<complete action="gotoAndPlay" value="7"/>
 		</node>
-		<node id="7" >
+		
+		<node id="7" type="eval">
 			<title>A Quiet Bar</title>
-			<file src="assets/media/FemaleComicScenario_0007.png" />
-			<complete action="gotoAndPlay" value="8"/>
+			<file src="assets/media/scene_07.swf" />
+			<complete action="gotoAndPlay" value="0:8,1:18,2:21"/>
 		</node>
+		
 		<node id="8" >
 			<title>Hang Low Tonight</title>
 			<file src="assets/media/FemaleComicScenario_0008.png" />
@@ -57,21 +59,27 @@ TODO ::
 			<file src="assets/media/FemaleComicScenario_0009.png" />
 			<complete action="gotoAndPlay" value="10"/>
 		</node>
-		<node id="10" >
+		<node id="10" type="eval" >
 			<title>From Bar to Club</title>
-			<file src="assets/media/FemaleComicScenario_0010.png" />
-			<complete action="gotoAndPlay" value="11"/>
+			<file src="assets/media/scene_10.swf" />
+			<complete action="gotoAndPlay" value="0:11,1:12,2:13"/>
 		</node>
 		<node id="11" >
 			<title>From Bar to Club (cont'd)</title>
 			<file src="assets/media/FemaleComicScenario_0011.png" />
-			<complete action="gotoAndPlay" value="12"/>
+			<complete action="end"/>
 		</node>
+		<!-- 
+			end 
+		-->
 		<node id="12" >
 			<title>Ladies Man</title>
 			<file src="assets/media/FemaleComicScenario_0012.png" />
-			<complete action="gotoAndPlay" value="13"/>
+			<complete action="end"/>
 		</node>
+		<!-- 
+			end 
+		-->
 		<node id="13" >
 			<title>Grilling Steaks</title>
 			<file src="assets/media/FemaleComicScenario_0013.png" />
@@ -95,8 +103,11 @@ TODO ::
 		<node id="17" >
 			<title>More Shots</title>
 			<file src="assets/media/FemaleComicScenario_0017.png" />
-			<complete action="gotoAndPlay" value="18"/>
+			<complete action="end"/>
 		</node>
+		<!-- 
+			end 
+		-->
 		<node id="18" >
 			<title>Maybe We Should Call It A Night</title>
 			<file src="assets/media/FemaleComicScenario_0018.png" />
@@ -110,8 +121,11 @@ TODO ::
 		<node id="20" >
 			<title>With Riley Checked</title>
 			<file src="assets/media/FemaleComicScenario_0020.png" />
-			<complete action="gotoAndPlay" value="21"/>
+			<complete action="end" />
 		</node>
+		<!-- 
+			end 
+		-->
 		<node id="21" >
 			<title>High Success</title>
 			<file src="assets/media/FemaleComicScenario_0021.png" />
@@ -140,10 +154,10 @@ TODO ::
 			<file src="assets/media/FemaleComicScenario_0025.png" />
 			<complete action="gotoAndPlay" value="26"/>
 		</node>
-		<node id="26" >
+		<node id="26" type="eval" >
 			<title></title>
-			<file src="assets/media/FemaleComicScenario_0026.png" />
-			<complete action="gotoAndPlay" value="27"/>
+			<file src="assets/media/scene_26.swf" />
+			<complete action="gotoAndPlay" value="0:27,1:30,2:31"/>
 		</node>
 		<node id="27" >
 			<title></title>
@@ -158,13 +172,20 @@ TODO ::
 		<node id="29" >
 			<title></title>
 			<file src="assets/media/FemaleComicScenario_0029.png" />
-			<complete action="gotoAndPlay" value="30"/>
+			<complete action="end" />
 		</node>
+		<!-- 
+			end 
+		-->
+		
 		<node id="30" >
 			<title></title>
 			<file src="assets/media/FemaleComicScenario_0030.png" />
-			<complete action="gotoAndPlay" value="31"/>
+			<complete action="end"/>
 		</node>
+		<!-- 
+			end 
+		-->
 		<node id="31" >
 			<title></title>
 			<file src="assets/media/FemaleComicScenario_0031.png" />
@@ -175,6 +196,9 @@ TODO ::
 			<file src="assets/media/FemaleComicScenario_0032.png" />
 			<complete action="gotoAndPlay" value="33"/>
 		</node>
+		<!-- 
+			end 
+		-->
 		<node id="33" >
 			<title></title>
 			<file src="assets/media/FemaleComicScenario_0033.png" />
@@ -188,11 +212,13 @@ TODO ::
 			<file src="assets/media/FemaleComicScenario_0034.png" />
 			<complete action="gotoAndPlay" value="35"/>
 		</node>		
-		<node id="35" >
+		
+		<node id="35" type="eval">
 			<title></title>
-			<file src="assets/media/FemaleComicScenario_0035.png" />
-			<complete action="gotoAndPlay" value="36"/>
+			<file src="assets/media/scene_35.swf" />
+			<complete action="gotoAndPlay" value="0:36,1:38,2:40"/>
 		</node>
+		
 		<node id="36" >
 			<title></title>
 			<file src="assets/media/FemaleComicScenario_0036.png" />
@@ -201,8 +227,11 @@ TODO ::
 		<node id="37" >
 			<title></title>
 			<file src="assets/media/FemaleComicScenario_0037.png" />
-			<complete action="gotoAndPlay" value="38"/>
+			<complete action="end"/>
 		</node>
+		<!-- 
+			end 
+		-->
 		<node id="38" >
 			<title></title>
 			<file src="assets/media/FemaleComicScenario_0038.png" />
@@ -211,8 +240,11 @@ TODO ::
 		<node id="39" >
 			<title></title>
 			<file src="assets/media/FemaleComicScenario_0039.png" />
-			<complete action="gotoAndPlay" value="40"/>
+			<complete action="end"/>
 		</node>
+		<!-- 
+			end 
+		-->
 		<node id="40" >
 			<title></title>
 			<file src="assets/media/FemaleComicScenario_0040.png" />
