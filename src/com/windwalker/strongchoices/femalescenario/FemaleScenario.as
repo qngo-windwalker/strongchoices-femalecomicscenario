@@ -86,7 +86,15 @@ package com.windwalker.strongchoices.femalescenario
 
 		private function onStageResize(event : Event = null) : void 
 		{
-			navMC.y = (stage.stageHeight - navMC.height) + 1;
+			if (stage.stageHeight > 768)
+			{
+				navMC.y = 728;
+			}
+			else
+			{
+				navMC.y = (stage.stageHeight - navMC.height) + 1;
+			}
+		
 		}
 
 		private function onModelChange(event : Event) : void 
