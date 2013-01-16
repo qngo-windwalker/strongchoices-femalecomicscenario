@@ -31,8 +31,8 @@
 		{
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			
-			stage.scaleMode = StageScaleMode.NO_SCALE;
-			stage.align     = StageAlign.TOP_LEFT;
+//			stage.scaleMode = StageScaleMode.NO_SCALE;
+//			stage.align     = StageAlign.TOP_LEFT;
 			
 			var configFile : String = stage.loaderInfo.parameters.configSrc || "";
 			

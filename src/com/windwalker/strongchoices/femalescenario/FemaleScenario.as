@@ -42,8 +42,8 @@ package com.windwalker.strongchoices.femalescenario
 		{
 			trace("Female Scenario init()");
 			
-			stage.scaleMode = StageScaleMode.NO_SCALE;
-			stage.align     = StageAlign.TOP_LEFT;
+//			stage.scaleMode = StageScaleMode.NO_SCALE;
+//			stage.align     = StageAlign.TOP_LEFT;
 			
 			model = Model.getInstance();
 			model.addEventListener(Event.COMPLETE, onModelComplete);
@@ -77,8 +77,8 @@ package com.windwalker.strongchoices.femalescenario
 			
 			titleTF = TextField(navMC.getChildByName("title_txt"));
 			
-			stage.addEventListener(Event.RESIZE, onStageResize);
-			onStageResize();
+//			stage.addEventListener(Event.RESIZE, onStageResize);
+//			onStageResize();
 			
 			disableBtn(prevMC);
 			controller.init();
